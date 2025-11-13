@@ -1,0 +1,91 @@
+body{
+  background-color: rgb(59, 66, 16);
+}
+
+button {
+  position: absolute;
+  background-color: #5eac4b;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: rgb(60, 230, 54);
+}
+
+.Descrição{
+  color: blueviolet;
+}
+
+.Verde{
+  color: rgb(46, 224, 46);
+}
+
+.Ingrediente {
+  font-size: 10px;
+  color: #ff6600;
+}
+
+.navbar {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255, 0, 0);
+  padding: 15px;
+  color: rgb(201, 163, 163);
+  border-radius: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li{
+  margin: 0 10px;
+}
+
+.nav-links a{
+  color: rgb(185, 185, 137);
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgb(255, 145, 0);
+  border-radius: 50px;
+}
+
+.menu-icon{
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(184, 187, 13);
+}
+
+#menu-toogle{
+  display: none;
+}
+
+@media(max-width: 600px){
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(255, 152, 35);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.menu-icon {
+  display: block;
+}
+
+#menu-toogle:checked + .menu-icon + .nav-links {
+  display: flex;
+}
